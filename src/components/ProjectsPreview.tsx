@@ -47,7 +47,7 @@ export default function ProjectsPreview() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: idx * 0.1, duration: 0.8 }}
-                            className="group relative overflow-hidden rounded-[3.5rem] h-[550px] border-8 border-white/5 shadow-2xl"
+                            className="group relative overflow-hidden rounded-[2.5rem] md:rounded-[3.5rem] h-[400px] md:h-[550px] border-4 md:border-8 border-white/5 shadow-2xl"
                         >
                             {/* Visual Image with fallback/overlay */}
                             <div className="absolute inset-0 bg-primary">

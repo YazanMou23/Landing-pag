@@ -24,7 +24,7 @@ export default function Footer() {
                     <Link href="/" className="text-3xl font-black tracking-tighter">
                         CLEAN <span className="text-secondary">UP</span>
                     </Link>
-                    <p className="text-gray-400 text-base leading-relaxed max-w-xs font-medium">
+                    <p className="text-white/80 text-base leading-relaxed max-w-xs font-medium">
                         {t('description')}
                     </p>
                     <div className="flex space-x-4">
@@ -42,7 +42,7 @@ export default function Footer() {
                         {t('quick_links')}
                         <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-secondary rounded-full"></span>
                     </h4>
-                    <ul className="space-y-4 font-bold text-gray-400">
+                    <ul className="space-y-4 font-bold text-white/80">
                         {links.map((link) => (
                             <li key={link.href}>
                                 <Link href={link.href} className="hover:text-secondary transition-all flex items-center group">
@@ -60,7 +60,7 @@ export default function Footer() {
                         {t('service_areas')}
                         <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-secondary rounded-full"></span>
                     </h4>
-                    <div className="grid grid-cols-2 gap-3 text-sm font-bold text-gray-400">
+                    <div className="grid grid-cols-2 gap-3 text-sm font-bold text-white/80">
                         {cities.map((city) => (
                             <span key={city} className="hover:text-white transition-colors cursor-default">{city}</span>
                         ))}
@@ -73,7 +73,7 @@ export default function Footer() {
                         {t('contact_title')}
                         <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-secondary rounded-full"></span>
                     </h4>
-                    <ul className="space-y-6 text-[15px] font-bold text-gray-400">
+                    <ul className="space-y-6 text-[15px] font-bold text-white/80">
                         <li className="flex items-center space-x-4">
                             <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-secondary">
                                 <Mail size={18} />
@@ -97,10 +97,10 @@ export default function Footer() {
             </div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-                <p className="text-gray-500 text-sm font-bold tracking-tight">
+                <p className="text-white/60 text-sm font-bold tracking-tight">
                     {t('copyright')}
                 </p>
-                <div className="flex space-x-8 text-xs font-black uppercase text-gray-500 tracking-widest">
+                <div className="flex space-x-8 text-xs font-black uppercase text-white/60 tracking-widest">
                     <a href="#" className="hover:text-secondary transition-colors">{t('imprint')}</a>
                     <a href="#" className="hover:text-secondary transition-colors">{t('privacy')}</a>
                     <a href="#" className="hover:text-secondary transition-colors">{t('terms')}</a>

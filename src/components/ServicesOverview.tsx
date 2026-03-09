@@ -58,7 +58,7 @@ export default function ServicesOverview() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.1, duration: 0.8 }}
-                                className="group relative h-[450px] rounded-[3.5rem] overflow-hidden shadow-2xl transition-all duration-700 hover:scale-[1.03] hover:shadow-primary/25 border-4 border-gray-50"
+                                className="group relative h-[380px] md:h-[450px] rounded-[2.5rem] md:rounded-[3.5rem] overflow-hidden shadow-2xl transition-all duration-700 hover:scale-[1.03] hover:shadow-primary/25 border-4 border-gray-50"
                             >
                                 {/* Background Image with animated overlay */}
                                 <Image
@@ -90,7 +90,7 @@ export default function ServicesOverview() {
                                 </div>
 
                                 {/* Number Indicator */}
-                                <div className="absolute top-8 right-8 text-white/5 text-[12rem] font-black leading-none pointer-events-none group-hover:text-secondary/10 transition-colors duration-700">
+                                <div className="absolute top-8 right-8 text-white/5 text-[8rem] md:text-[12rem] font-black leading-none pointer-events-none group-hover:text-secondary/10 transition-colors duration-700">
                                     {index + 1}
                                 </div>
                             </motion.div>

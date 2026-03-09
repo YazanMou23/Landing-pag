@@ -26,7 +26,7 @@ export default async function ProjectsPage({ params }: Props) {
             <Navbar />
 
             {/* Header Section */}
-            <section className="pt-48 pb-32 bg-primary relative overflow-hidden text-center">
+            <section className="pt-32 pb-20 md:pt-48 md:pb-32 bg-primary relative overflow-hidden text-center">
                 <div className="absolute inset-0 bg-gradient-to-tr from-primary via-primary to-secondary/20 opacity-40"></div>
                 <div className="absolute top-0 right-0 w-full h-full bg-secondary/5 skew-x-12 transform origin-top-right"></div>
                 <div className="max-w-7xl mx-auto px-6 relative z-10 space-y-10">
@@ -34,7 +34,7 @@ export default async function ProjectsPage({ params }: Props) {
                         <span className="w-2 h-2 bg-secondary rounded-full"></span>
                         <span>{t('badge')}</span>
                     </div>
-                    <h1 className="text-6xl md:text-[8rem] font-black text-white tracking-tighter leading-[0.85] uppercase">
+                    <h1 className="text-5xl md:text-7xl lg:text-[8rem] font-black text-white tracking-tighter leading-[0.85] uppercase">
                         {t.rich('title', {
                             span: (chunks) => <span className="text-secondary italic">{chunks}</span>
                         })}
@@ -46,13 +46,13 @@ export default async function ProjectsPage({ params }: Props) {
             </section>
 
             {/* Projects Grid */}
-            <section className="py-32">
+            <section className="py-20 md:py-32">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-24">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-24">
                         {projectKeys.map((key, idx) => (
                             <div key={key} className="group flex flex-col gap-12 relative">
                                 {/* Image/Visual Part */}
-                                <div className="relative rounded-[4rem] overflow-hidden h-[600px] border-[10px] border-white ring-1 ring-gray-100 shadow-[0_50px_100px_-30px_rgba(10,77,104,0.2)] hover:shadow-secondary/30 transition-all duration-700 hover:-translate-y-4">
+                                <div className="relative rounded-[3rem] md:rounded-[4rem] overflow-hidden h-[400px] md:h-[600px] border-[8px] md:border-[10px] border-white ring-1 ring-gray-100 shadow-[0_50px_100px_-30px_rgba(10,77,104,0.2)] hover:shadow-secondary/30 transition-all duration-700 hover:-translate-y-4">
                                     <Image
                                         src={projectData[key].image}
                                         alt={t(`items.${key}.name`)}
@@ -62,7 +62,7 @@ export default async function ProjectsPage({ params }: Props) {
                                     <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent z-10 transition-opacity duration-500 group-hover:opacity-80"></div>
 
                                     {/* Content on Image */}
-                                    <div className="absolute inset-0 p-16 flex flex-col justify-end text-white z-20 space-y-8">
+                                    <div className="absolute inset-0 p-8 md:p-16 flex flex-col justify-end text-white z-20 space-y-6 md:space-y-8">
                                         <div className="flex items-center space-x-4">
                                             <div className="w-14 h-14 bg-white/10 backdrop-blur-xl rounded-2xl flex items-center justify-center text-white border border-white/20 group-hover:bg-secondary group-hover:border-secondary transition-all shadow-2xl">
                                                 <ExternalLink size={24} />
@@ -74,7 +74,7 @@ export default async function ProjectsPage({ params }: Props) {
                                         </div>
                                     </div>
 
-                                    <div className="absolute top-12 right-12 text-white/10 text-[10rem] font-black leading-none pointer-events-none group-hover:text-secondary/10 transition-colors duration-700">
+                                    <div className="absolute top-8 right-8 md:top-12 md:right-12 text-white/10 text-[6rem] md:text-[10rem] font-black leading-none pointer-events-none group-hover:text-secondary/10 transition-colors duration-700">
                                         {idx + 1}
                                     </div>
                                 </div>

@@ -14,7 +14,7 @@ export default function CTA() {
                     initial={{ opacity: 0, scale: 0.95 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
-                    className="relative rounded-[5rem] overflow-hidden bg-primary text-white p-20 md:p-32 text-center shadow-[0_60px_100px_-30px_rgba(10,77,104,0.4)]"
+                    className="relative rounded-[3rem] md:rounded-[5rem] overflow-hidden bg-primary text-white p-10 md:p-20 lg:p-32 text-center shadow-[0_60px_100px_-30px_rgba(10,77,104,0.4)]"
                 >
                     {/* Animated background elements */}
                     <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/95 to-primary/80"></div>
@@ -31,7 +31,7 @@ export default function CTA() {
                             <Sparkles size={48} className="text-secondary drop-shadow-[0_0_15px_var(--secondary)]" />
                         </motion.div>
 
-                        <h2 className="text-5xl md:text-[6rem] font-black tracking-tighter leading-[0.85]">
+                        <h2 className="text-4xl md:text-5xl lg:text-[6rem] font-black tracking-tighter leading-[0.85]">
                             {t.rich('headline', {
                                 span: (chunks) => <span className="text-secondary italic">{chunks}</span>
                             })}

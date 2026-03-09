@@ -1,4 +1,4 @@
-'use client';
+ 'use client';
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { Shield, Map, Users, Leaf } from 'lucide-react';
@@ -60,7 +60,7 @@ export default function WhyChooseUs() {
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.1, duration: 0.8 }}
                                 whileHover={{ y: -15, scale: 1.02 }}
-                                className="bg-white p-12 rounded-[3.5rem] shadow-[0_40px_100px_-20px_rgba(0,0,0,0.06)] border border-gray-100 hover:border-secondary/30 transition-all duration-500 group relative overflow-hidden"
+                                className="bg-white p-8 md:p-12 rounded-[2.5rem] md:rounded-[3.5rem] shadow-[0_40px_100px_-20px_rgba(0,0,0,0.06)] border border-gray-100 hover:border-secondary/30 transition-all duration-500 group relative overflow-hidden"
                             >
                                 {/* Hover Background Accent */}
                                 <div className="absolute -top-10 -right-10 w-32 h-32 bg-secondary/5 rounded-full group-hover:scale-[3] transition-all duration-700"></div>

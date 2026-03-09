@@ -34,7 +34,7 @@ export default async function ServicesPage({ params }: Props) {
             <Navbar />
 
             {/* Header Section */}
-            <section className="pt-48 pb-32 bg-primary text-white text-center relative overflow-hidden">
+            <section className="pt-32 pb-20 md:pt-48 md:pb-32 bg-primary text-white text-center relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-tr from-primary via-primary to-secondary/10 opacity-40"></div>
                 <div className="absolute -top-24 -right-24 w-96 h-96 bg-secondary/10 rounded-full blur-[120px] animate-pulse"></div>
                 <div className="max-w-4xl mx-auto px-6 relative z-10 space-y-8">
@@ -55,14 +55,14 @@ export default async function ServicesPage({ params }: Props) {
             </section>
 
             {/* Services List */}
-            <section className="py-32">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-48">
+            <section className="py-20 md:py-32">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24 md:space-y-48">
                     {services.map((key, idx) => {
                         const Icon = icons[key];
                         return (
-                            <div key={key} className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-center group relative">
+                            <div key={key} className="grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-16 lg:gap-24 items-center group relative">
                                 {/* Number Indicator (absolute positioned) */}
-                                <div className={`absolute -top-10 md:-top-20 ${idx % 2 === 0 ? '-left-10' : '-right-10'} text-[15rem] md:text-[20rem] font-black text-gray-50 leading-none pointer-events-none -z-10 transition-colors group-hover:text-secondary/5`}>
+                                <div className={`absolute -top-10 md:-top-20 ${idx % 2 === 0 ? '-left-10' : '-right-10'} text-[10rem] md:text-[20rem] font-black text-gray-50 leading-none pointer-events-none -z-10 transition-colors group-hover:text-secondary/5`}>
                                     {idx + 1}
                                 </div>
 
@@ -112,11 +112,11 @@ export default async function ServicesPage({ params }: Props) {
                                         />
                                         <div className="absolute inset-0 bg-primary/30 backdrop-blur-[1px] opacity-40"></div>
 
-                                        <div className="absolute inset-0 flex items-center justify-center p-20 z-20">
+                                        <div className="absolute inset-0 flex items-center justify-center p-10 md:p-20 z-20">
                                             <Icon size={150} className="text-white opacity-20 drop-shadow-[0_0_20px_rgba(255,255,255,0.4)]" strokeWidth={1} />
                                         </div>
 
-                                        <div className="absolute bottom-10 left-10 right-10 p-6 bg-white/10 backdrop-blur-xl rounded-[2rem] border border-white/20 transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 z-30">
+                                        <div className="absolute bottom-6 left-6 right-6 md:bottom-10 md:left-10 md:right-10 p-6 bg-white/10 backdrop-blur-xl rounded-[2rem] border border-white/20 transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 z-30">
                                             <p className="text-white font-black text-[10px] uppercase tracking-[0.3em] mb-1">{t('guarantee_title')}</p>
                                             <p className="text-gray-300 text-xs font-bold leading-tight">{t('guarantee_text')}</p>
                                         </div>

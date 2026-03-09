@@ -81,13 +81,13 @@ export default function Hero() {
                     transition={{ duration: 1.2 }}
                     className="relative lg:col-span-5"
                 >
-                    <div className="relative z-10 rounded-[3.5rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.6)] border-8 border-white/5">
+                    <div className="relative z-10 rounded-[2.5rem] md:rounded-[3.5rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.6)] border-4 md:border-8 border-white/5">
                         <Image
                             src="/images/hero.png"
                             alt="Professional Cleaning Team"
                             width={1000}
                             height={1200}
-                            className="object-cover hover:scale-105 transition-all duration-1000 h-[700px] brightness-90 contrast-110"
+                            className="object-cover hover:scale-105 transition-all duration-1000 h-[400px] md:h-[700px] brightness-90 contrast-110"
                             priority
                         />
                         {/* Overlay Gradient */}

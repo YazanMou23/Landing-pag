@@ -17,7 +17,7 @@ export default async function ContactPage({ params }: Props) {
             <Navbar />
 
             {/* Header Section */}
-            <section className="pt-48 pb-32 bg-primary relative overflow-hidden text-center">
+            <section className="pt-32 pb-20 md:pt-48 md:pb-32 bg-primary relative overflow-hidden text-center">
                 <div className="absolute inset-0 bg-gradient-to-tr from-primary via-primary to-secondary/20 opacity-40"></div>
                 <div className="absolute top-0 right-0 w-full h-full bg-secondary/5 skew-x-12 transform origin-top-right"></div>
                 <div className="max-w-7xl mx-auto px-6 relative z-10 space-y-10">
@@ -25,7 +25,7 @@ export default async function ContactPage({ params }: Props) {
                         <span className="w-2 h-2 bg-secondary rounded-full"></span>
                         <span>{t('badge')}</span>
                     </div>
-                    <h1 className="text-6xl md:text-[8rem] font-black text-white tracking-tighter leading-[0.85] uppercase">
+                    <h1 className="text-5xl md:text-7xl lg:text-[8rem] font-black text-white tracking-tighter leading-[0.85] uppercase">
                         {t.rich('title', {
                             span: (chunks) => <span className="text-secondary italic">{chunks}</span>
                         })}
@@ -37,8 +37,8 @@ export default async function ContactPage({ params }: Props) {
             </section>
 
             {/* Main Content */}
-            <section className="py-32">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-32 items-start">
+            <section className="py-20 md:py-32">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32 items-start">
 
                     {/* Left side: Info */}
                     <div className="space-y-16">
@@ -82,7 +82,7 @@ export default async function ContactPage({ params }: Props) {
                         </div>
 
                         {/* Simple Map Visualization */}
-                        <div className="relative rounded-[4rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(10,77,104,0.15)] h-[450px] border-[10px] border-white ring-1 ring-gray-100 bg-gray-50 flex items-center justify-center group">
+                        <div className="relative rounded-[3rem] md:rounded-[4rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(10,77,104,0.15)] h-[350px] md:h-[450px] border-[8px] md:border-[10px] border-white ring-1 ring-gray-100 bg-gray-50 flex items-center justify-center group">
                             <div className="absolute inset-0 bg-primary/5 group-hover:bg-secondary/5 transition-colors duration-700"></div>
                             <div className="relative text-center space-y-6 z-10 px-12">
                                 <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-xl mx-auto group-hover:scale-110 group-hover:text-secondary transition-all">
@@ -97,7 +97,7 @@ export default async function ContactPage({ params }: Props) {
                     </div>
 
                     {/* Right side: Form */}
-                    <div className="bg-light-gray p-16 md:p-24 rounded-[5rem] shadow-[0_60px_100px_-30px_rgba(10,77,104,0.08)] border border-gray-100 relative overflow-hidden h-fit">
+                    <div className="bg-light-gray p-8 sm:p-12 md:p-24 rounded-[3rem] md:rounded-[5rem] shadow-[0_60px_100px_-30px_rgba(10,77,104,0.08)] border border-gray-100 relative overflow-hidden h-fit">
                         {/* Form background accent */}
                         <div className="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 -z-10"></div>
 
